@@ -91,8 +91,8 @@ function searchCondition() {
         }
         })
         .catch(error => {
-        console.error('Error:', error);
-        resultDiv.innerHTML = 'An error occurred while fetching data.';
+            console.error('Error:', error);
+            resultDiv.innerHTML = 'An error occurred while fetching data.';
         });
 }
 btnSearch.addEventListener('click', searchCondition);
