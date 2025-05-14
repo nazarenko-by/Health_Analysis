@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Зв'яжіться з нами</title>
+    <link rel="stylesheet" href="./health_analysis.css">
+    <style>
+        body{
+            text-align: center;
+        }
+        /* Деяке базове стилізування для демонстраційних цілей */
+        #contactForm {
+        max-width: 400px;
+        margin: 0 auto;
+        }
+        #contactForm input,
+        #contactForm textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+        }
+        #contactForm button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+        #contactForm button:hover {
+        background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav><h1>Аналіз здоров'я</h1>
+        <ul>
+        <li><a href="./index.html" id="home">Головна </a></li>
+        <li><a href="./health_contact.html" id="contact">Зв'яжіться з нами </a></li>
+        </li>
+
+        </ul>
+        </nav>
+    <h1>Зв'яжіться з нами</h1>
+    <p>Не соромтеся зв'язатися з нами, щоб дізнатися більше про ваші стани та методи лікування.</p>
+
+    <form id="contactForm">
+        <div>
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+        <label for="condition">Стан</label>
+        <input type="text" id="condition" name="condition" required>
+        </div>
+        <div>
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" onclick="thankyou()">Відправити</button>
+    </form>
+    <script>
+        function thankyou(){
+            alert('Дякуємо за те, що зв'язалися з нами!')
+        }
+    </script>
+</body>
+</html>
